@@ -1,0 +1,218 @@
+html, body {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+.container {
+  height: 300% !important;
+  width: 100% !important;
+}
+.first {
+  background-color: #242F3A;
+  height: 33.33%;
+  width: 100%;
+}
+.first__title {
+  color: white;
+  font-size: 60px;
+  font-weight: 100;
+  margin: 0;
+  text-align: center;
+  padding-top: 250px;
+}
+.first__sub-title {
+  color: #3AA9E3;
+  font-weight: 100;
+  font-size: 27px;
+  text-align: center;
+  margin: 0;
+  padding-top: 14px;
+}
+.first__description {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 5px;
+}
+.first__form {
+  width: 500px;
+  margin: auto;
+  display: flex;
+  padding-top: 20px;
+}
+.first__email-input {
+  border: 1px solid white;
+  width: 300px;
+  height: 35spx;
+  user-select: none;
+  outline: none;
+}
+.first__label {
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  padding-right: 20px;
+  padding-top: 9px;
+}
+input[type="email"], textarea {
+  background-color: #242F3A;
+  color: white;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: 'Helvetica Neue';
+  letter-spacing: 2px;
+}
+.button__container {
+  width: 130px;
+  height: 40px;
+  text-align: center;
+}
+button {
+  outline:none;
+  height: 40px;
+  text-align: center;
+  width: 130px;
+  border-radius:40px;
+  background: #242F3A;
+  border: 2px solid #3AA9E3;
+  color:#3AA9E3;
+  letter-spacing:1px;
+  text-shadow:0;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  margin-left: 20px;
+}
+button:hover {
+  color: white;
+  background: #242F3A;
+  border: 2px solid white;
+}
+button:active {
+  letter-spacing: 2px;
+}
+button:after {
+  content:"SUBMIT";
+}
+.onclic {
+  width: 40px;
+  border-color:#bbbbbb;
+  border-width:3px;
+  font-size:0;
+  border-left-color:#1ECD97;
+  animation: rotating 2s 0.25s linear infinite;
+}
+.onclic:after {
+  content:"";
+}
+.onclic:hover {
+  color: #1ECD97;
+  background: white;
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: #1ECD97;
+}
+.validate:after {
+    font-family:'FontAwesome';
+    content:"\f00c";
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 10%;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+#tile__container
+{
+  height: 100%
+}
+
+#thumbs
+{
+    height: 168px;
+    min-height: 168px;
+    background: #3AA9EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+#thumbs div
+{
+  display: block;
+    padding: 0 10px;
+    flex-shrink: 0;
+    height: 151px;
+}
+
+ .tile__header {
+   color: #242F3A;
+   width: 100px;
+   margin: 0;
+   font-size: 25px;
+   text-align: center;
+ }
+
+.second {
+  background-color: #3AA9E3;
+  height: 35%;
+  width: 100%;
+}
+.third {
+  background-color: #242F3A;
+  height: 100%;
+  width: 100%;
+}
